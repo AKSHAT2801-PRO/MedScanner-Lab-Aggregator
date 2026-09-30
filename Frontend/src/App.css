@@ -1,0 +1,247 @@
+:root {
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --text: #1c2333;
+  --muted: #6b7386;
+  --border: #e3e7f0;
+  --primary: #2f5bea;
+  --primary-dark: #2448c4;
+  --green: #12805c;
+  --green-bg: #e3f6ee;
+  --amber: #a15c00;
+  --amber-bg: #fff2dc;
+  --blue-bg: #e8eeff;
+}
+
+.app {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.header h1 {
+  margin: 0 0 6px;
+  font-size: 1.8rem;
+}
+.header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Form */
+.search-form {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  background: var(--surface);
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(20, 30, 60, 0.05);
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+.field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.field input {
+  padding: 11px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+.field input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(47, 91, 234, 0.15);
+}
+.search-form button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.search-form button:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+.search-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Status */
+.error {
+  margin-top: 16px;
+  padding: 12px 14px;
+  background: #fdecec;
+  color: #b42318;
+  border-radius: 8px;
+}
+.count {
+  margin: 24px 0 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.empty {
+  margin-top: 24px;
+  padding: 32px;
+  text-align: center;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}
+
+/* Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(20, 30, 60, 0.05);
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.type-badge,
+.nabl-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.type-badge.single {
+  background: var(--blue-bg);
+  color: var(--primary);
+}
+.type-badge.package {
+  background: var(--amber-bg);
+  color: var(--amber);
+}
+.nabl-badge {
+  background: var(--green-bg);
+  color: var(--green);
+  text-transform: none;
+  font-size: 0.72rem;
+}
+.item-name {
+  margin: 4px 0 0;
+  font-size: 1.15rem;
+}
+.provider {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.tags-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.tags-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tag {
+  font-size: 0.78rem;
+  background: #f0f2f8;
+  border: 1px solid var(--border);
+  padding: 3px 9px;
+  border-radius: 6px;
+}
+
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 6px;
+}
+.offer-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.mrp {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+.discount {
+  color: var(--green);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.total {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  padding: 10px 12px;
+  background: #f7f9ff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+.total-label {
+  font-weight: 700;
+}
+.total-value {
+  font-style: italic;
+}
+.total-sum {
+  margin-left: auto;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .header h1 {
+    font-size: 1.4rem;
+  }
+}
