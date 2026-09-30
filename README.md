@@ -1,7 +1,7 @@
 # MedScanner-Lab-Aggregator
 Build a basic full-stack web application that allows a user to search for a lab test in a specific pincode, and see the results sorted by the true lowest price.
 
-⚡ Quick Start
+## ⚡ Quick Start
 
 For someone who already has Git and Node.js installed, the complete setup is simply:
 
@@ -10,30 +10,30 @@ cd MedScanner-Lab-Aggregator
 npm install
 npm run dev
 
-That's it! 🎉
+## That's it! 🎉
 
 Detailed Step By Step Guide:
 How to Run Locally
 
 Follow these simple steps to run the application on your local machine.
 
-1. Clone the GitHub Repository
+## 1. Clone the GitHub Repository
 
 Clone the repository into an empty folder:
 git clone https://github.com/AKSHAT2801-PRO/MedScanner-Lab-Aggregator.git
 
-2. Change Directory
+## 2. Change Directory
 
 Move into the project directory:
 cd MedScanner-Lab-Aggregator
 
-3. Install Dependencies
+## 3. Install Dependencies
 Run:
 npm install
 
 This installs the required root dependencies.
 
-4. Start the Application
+## 4. Start the Application
 Run:
 npm run dev
 
@@ -46,7 +46,7 @@ Start the Backend server
 
 Both servers will run simultaneously.
 
-5. Use the Application
+## 5. Use the Application
 
 Once the application starts, open the Frontend URL shown in the terminal.
 
