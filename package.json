@@ -1,0 +1,25 @@
+{
+  "name": "med_scanner_assignment",
+  "version": "1.0.0",
+  "description": "Build a basic full-stack web application that allows a user to search for a lab test in a specific pincode, and see the results sorted by the true lowest price.",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix Frontend && npm install --prefix Backend",
+    "dev": "npm run install:all && concurrently \"npm run dev --prefix Frontend\" \"npm start --prefix Backend\"",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AKSHAT2801-PRO/MedScanner-Lab-Aggregator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AKSHAT2801-PRO/MedScanner-Lab-Aggregator/issues"
+  },
+  "homepage": "https://github.com/AKSHAT2801-PRO/MedScanner-Lab-Aggregator#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}
