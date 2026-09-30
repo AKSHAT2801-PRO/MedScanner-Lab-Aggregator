@@ -4,12 +4,18 @@ Build a basic full-stack web application that allows a user to search for a lab 
 ## ⚡ Quick Start
 
 For someone who already has Git and Node.js installed, the complete setup is simply:
-
-1. git clone https://github.com/AKSHAT2801-PRO/MedScanner-Lab-Aggregator.git
-2. cd MedScanner-Lab-Aggregator
-3. npm install
-4. npm run dev
-
+```text
+git clone https://github.com/AKSHAT2801-PRO/MedScanner-Lab-Aggregator.git
+```
+```text
+cd MedScanner-Lab-Aggregator
+```
+```text
+npm install
+```
+```text
+npm run dev
+```
 That's it! 🎉
 
 ## Detailed Step By Step Guide to Run Locally
@@ -18,24 +24,28 @@ Follow these simple steps to run the application on your local machine.
 
 ## 1. Clone the GitHub Repository
 
-Clone the repository into an empty folder:\
+Clone the repository into an empty folder:
+```text 
 git clone https://github.com/AKSHAT2801-PRO/MedScanner-Lab-Aggregator.git
-
+```
 ## 2. Change Directory
 
-Move into the project directory:\
+Move into the project directory:
+```text 
 cd MedScanner-Lab-Aggregator
-
+```
 ## 3. Install Dependencies
-Run:\
+Run:
+```text 
 npm install
-
+```
 This installs the required root dependencies.
 
 ## 4. Start the Application
-Run:\
+Run:
+```text 
 npm run dev
-
+```
 This command will automatically:
 
 Install Frontend dependencies
@@ -48,6 +58,9 @@ Both servers will run simultaneously.
 ## 5. Use the Application
 
 Once the application starts, open the Frontend URL shown in the terminal.
+```text
+http://localhost:5173/
+```
 
 You can then search for a lab test by entering the test name and pincode.
 
@@ -69,5 +82,4 @@ The application uses an aggregation function to find and rank the most relevant 
    
    For every matching provider, the actual payable price is calculated as:
 
-   ```text
    True Price = Offer Price + Home Collection Fee
