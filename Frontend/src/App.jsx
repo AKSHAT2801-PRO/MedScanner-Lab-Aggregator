@@ -111,7 +111,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>Diagnostic Test Finder</h1>
+        <h1>MedScanner Lab Aggregator</h1>
         <p>Compare tests and packages available at your pincode.</p>
       </header>
 
