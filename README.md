@@ -5,10 +5,10 @@ Build a basic full-stack web application that allows a user to search for a lab 
 
 For someone who already has Git and Node.js installed, the complete setup is simply:
 
-git clone https://github.com/AKSHAT2801-PRO/MedScanner-Lab-Aggregator.git
-cd MedScanner-Lab-Aggregator
-npm install
-npm run dev
+1. git clone https://github.com/AKSHAT2801-PRO/MedScanner-Lab-Aggregator.git
+2. cd MedScanner-Lab-Aggregator
+3. npm install
+4. npm run dev
 
 ## That's it! 🎉
 
