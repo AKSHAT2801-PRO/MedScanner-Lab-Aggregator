@@ -81,5 +81,22 @@ The application uses an aggregation function to find and rank the most relevant 
 3. **Calculate the True Price**
    
    For every matching provider, the actual payable price is calculated as:
-
+   
    True Price = Offer Price + Home Collection Fee
+
+## The Thinking Question:
+```text
+Question: In the real world, big companies will try to block our servers from scraping their prices.
+If you had to build a scraper to get live prices from a competitor's website without
+getting blocked, how would you architect it?
+```
+```text
+Answer:
+I would first check for an official API or permitted data feed; otherwise,
+I'd build a scraper with caching and controlled request rates to minimize unnecessary traffic.
+I'd use a scheduler and queue to distribute scraping jobs and avoid sending frequent requests for the same product.
+For reliability, a managed proxy service such as DataImpulse could provide distributed data outflow,
+while still respecting the site's rate limits and policies.
+I'd store the extracted data with timestamps in database, using when requests fail.
+```
+   
