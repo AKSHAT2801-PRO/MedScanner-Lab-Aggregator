@@ -10,31 +10,30 @@ For someone who already has Git and Node.js installed, the complete setup is sim
 3. npm install
 4. npm run dev
 
-## That's it! 🎉
+That's it! 🎉
 
-Detailed Step By Step Guide:
-How to Run Locally
+## Detailed Step By Step Guide to Run Locally
 
 Follow these simple steps to run the application on your local machine.
 
 ## 1. Clone the GitHub Repository
 
-Clone the repository into an empty folder:
+Clone the repository into an empty folder:\
 git clone https://github.com/AKSHAT2801-PRO/MedScanner-Lab-Aggregator.git
 
 ## 2. Change Directory
 
-Move into the project directory:
+Move into the project directory:\
 cd MedScanner-Lab-Aggregator
 
 ## 3. Install Dependencies
-Run:
+Run:\
 npm install
 
 This installs the required root dependencies.
 
 ## 4. Start the Application
-Run:
+Run:\
 npm run dev
 
 This command will automatically:
